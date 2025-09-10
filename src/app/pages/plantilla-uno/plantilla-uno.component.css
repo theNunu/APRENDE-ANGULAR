@@ -1,0 +1,65 @@
+h1 {
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  transform: rotate(0.8turn);
+}
+
+.my_box {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+strong {
+    color: green;
+}
+
+.lore_don_pollo {
+    background-color: rgb(181, 181, 247);
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 15px;
+   
+}
+
+h3 {
+    display: flex;
+    justify-content: space-around; /*centrar contenido (a)*/ 
+}
+
+.notebox {
+  border: 4px solid #666666;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.notebox.warning {
+  border-color: orange;
+  font-weight: bold;
+}
+
+.notebox.danger {
+  border-color: red;
+  font-weight: bold;
+}
+
+.text-presentation {
+  font-variant-emoji: text;
+}
+
+.emoji-presentation {
+  font-variant-emoji: emoji;
+}
