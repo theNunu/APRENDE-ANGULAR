@@ -1,0 +1,45 @@
+/* Contenedor principal en filas */
+.container {
+  display: flex; /* clave */
+  justify-content: space-between; /* clave */
+  gap: 50px;
+  margin-top: 20px;
+}
+
+/* Formulario a la izquierda */
+.form-section {
+  flex: 1;
+}
+
+
+.form-section input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Botón */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Listado a la derecha */
+.list-section {
+  flex: 1;
+}
+
+.list-section ol {
+  padding-left: 20px;
+}

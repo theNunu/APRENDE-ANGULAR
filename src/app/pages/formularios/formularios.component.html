@@ -1,0 +1,88 @@
+<style>
+    .comidas {
+        min-width: 45%;
+        margin-bottom: 10px;
+        border: 1px solid #3a06b4c9;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .heroes {
+        min-width: 30%;
+        padding: 8px;
+        border-radius: 20px;
+        border: 6px solid #05d547c9;
+
+    }
+</style>
+
+
+<h2>Responsive Form</h2>
+
+<select class="comidas" name="comida">
+    <option value="bolon">Bolon</option>
+    <option value="encebollado">Encebollado</option>
+    <option value="guatita">Guatita</option>
+</select>
+<br>
+
+<select name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+</select>
+<h2>los heroes</h2>
+<select class="heroes">
+    <option value="garen">Garen</option>
+    <option value="jinx">Canada</option>
+    <option value="teemo">Teemo</option>
+</select>
+<hr>
+<div class="container-vertical">
+    <button class="boton-1">
+        boton 1
+
+    </button>
+
+    <button class="boton-2">
+        boton 2
+
+    </button>
+
+    <button class="boton-3">
+        boton 3
+
+    </button>
+
+    <button class="boton-4">
+        boton 4
+
+    </button>
+</div>
+
+<h3>mi propio formulario</h3>
+<div class="container">
+    <div class="mi-formulario">
+        <input type="text" placeholder="name of champion">
+        <input type="text" placeholder="corsia del campione">
+        <input type="text" placeholder="descripcion">
+
+
+        <button> guardar</button>
+        <button> eliminar</button>
+
+
+    </div>
+
+</div>
+
+
+<div class="el-vertical">
+    <ul>
+        <li><a routerLink="/">Plantilla uno</a></li>
+        <li><a [routerLink]="['/plantilla-dos']">Plantilla dos</a></li>
+        <li><a [routerLink]="['/dragonball']">Dragon ball</a></li>
+        <li><a [routerLink]="['/pruebas-enlaces']">Pruebas enlaces</a></li>
+        <li><a [routerLink]="['/formularios']">Formularios</a></li>
+    </ul>
+</div>
