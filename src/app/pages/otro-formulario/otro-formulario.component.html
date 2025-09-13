@@ -1,0 +1,53 @@
+<section class="row">
+
+    <div class="col-12 col-sm-6">
+        <h3>agregar:   ,nombre: {{ nameBB() }} , apelldo: {{ lastNameBB() }}</h3>
+        <input
+         type="text" 
+         class="form-control" 
+         placeholder="nombre"
+         [value]="nameBB()" 
+
+         (input)="nameBB.set(txtNameBB.value)"
+         #txtNameBB
+          />
+        <input type="text" class="form-control mt-2" placeholder="apellido" 
+        [value]="lastNameBB()"
+        (input)="lastNameBB.set(txtLastNameBB.value)"
+         #txtLastNameBB/>
+        <input type="int" class="form-control mt-2" placeholder="edad" />
+        <button class="mt-2 btn btn-primary" (click)="mostrarDatos()">presionar</button>
+
+    </div>
+
+    <div class="col-12 col-sm-6">
+        <h3>Listado</h3>
+        <ul>
+            @for(employee of employees(); track employee.id; let idx = $index){
+            @if( employee.name === "Gustavo"){
+            <h6>nombre bloqueado por condicional (Gustavo)</h6>
+
+
+            }@else {
+
+            <li>
+                {{ idx + 1 }} .-
+                {{ employee.name }}
+                {{ employee.lastName }}
+                <strong [class.text-danger]="employee.age > 50" [class.text-success]="employee.age == 24">
+                    ({{ employee.age }} años)
+                </strong>
+            </li>
+            }
+
+            }
+
+        </ul>
+    </div>
+</section>
+
+@if(isAdmin){
+es true
+}@else {
+es false
+}

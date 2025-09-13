@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DragonballComponent } from './pages/dragonball/dragonball.component';
 import { PruebasEnlacesComponent } from './pages/pruebas-enlaces/pruebas-enlaces.component';
 import { FormulariosComponent } from './pages/formularios/formularios.component';
+import { OtroFormularioComponent } from './pages/otro-formulario/otro-formulario.component';
 
 
 export const routes: Routes = [
@@ -32,6 +33,10 @@ export const routes: Routes = [
     {
         path: "formularios",
         component: FormulariosComponent
+    },
+    {
+        path: "otro-formulario",
+        component: OtroFormularioComponent
     },
     {
         path: "**",
